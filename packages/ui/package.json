@@ -4,7 +4,7 @@
   "main": "index.ts",
   "scripts": {
     "build": "vue-tsc --noEmit && vite build && build-storybook --quiet",
-    "dev": "start-storybook -p 6006",
+    "dev": "start-storybook --quiet -p 6006",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
