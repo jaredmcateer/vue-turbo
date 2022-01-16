@@ -1,25 +1,18 @@
 {
   "name": "web",
   "version": "0.0.0",
-  "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "next": "12.0.7",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "ui": "workspace:*"
+    "vue": "^3.2.25"
   },
   "devDependencies": {
-    "config": "workspace:*",
-    "eslint": "7.32.0",
-    "next-transpile-modules": "9.0.0",
-    "tsconfig": "workspace:*",
-    "@types/react": "17.0.37",
-    "typescript": "^4.5.3"
+    "@vitejs/plugin-vue": "^2.0.0",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2",
+    "vue-tsc": "^0.29.8"
   }
 }
