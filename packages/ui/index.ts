@@ -1,5 +1,3 @@
-import Button from "./components/Button.vue";
-import Header from "./components/Header.vue";
-import Page from "./components/Page.vue";
-
-export { Button, Header, Page };
+export { default as Button } from "./components/Button.vue";
+export { default as Header } from "./components/Header.vue";
+export { default as Page } from "./components/Page.vue";
