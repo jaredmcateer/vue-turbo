@@ -1,8 +1,8 @@
-import { Story } from '@storybook/vue3';
-import MyHeader from './Header.vue';
+import { Story } from "@storybook/vue3";
+import MyHeader from "./Header.vue";
 
 export default {
-  title: 'Example/Header',
+  title: "Example/Header",
   component: MyHeader,
 };
 

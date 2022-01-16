@@ -1,9 +1,9 @@
-import MyPage from './Page.vue';
-import * as HeaderStories from './Header.stories';
-import { Story } from '@storybook/vue3';
+import MyPage from "./Page.vue";
+import * as HeaderStories from "./Header.stories";
+import { Story } from "@storybook/vue3";
 
 export default {
-  title: 'Example/Page',
+  title: "Example/Page",
   component: MyPage,
 };
 
