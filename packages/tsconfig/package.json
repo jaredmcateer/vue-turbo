@@ -5,6 +5,7 @@
   "main": "index.js",
   "files": [
     "base.json",
-    "vue-library.json"
+    "vue-library.json",
+    "vite-app.json"
   ]
 }
