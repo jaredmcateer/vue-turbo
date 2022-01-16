@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import MyHeader from './Header.vue';
 
-defineProps<{user: Record<string, unknown>}>();
+defineProps<PageProps>();
 defineEmits(['login', 'logout', 'createAccount']);
 </script>
 

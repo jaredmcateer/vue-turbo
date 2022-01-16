@@ -1,12 +1,13 @@
 import MyPage from './Page.vue';
 import * as HeaderStories from './Header.stories';
+import { Story } from '@storybook/vue3';
 
 export default {
   title: 'Example/Page',
   component: MyPage,
 };
 
-const Template = (args) => ({
+const Template: Story<PageProps> = (args) => ({
   // Components used in your story `template` are defined in the `components` object
   components: { MyPage },
   // The story's `args` need to be mapped into the template through the `setup()` method

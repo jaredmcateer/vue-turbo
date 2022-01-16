@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import MyButton from './Button.vue';
 
-defineProps<{user: Record<string, unknown>}>();
+defineProps<HeaderProps>();
 defineEmits(["login", "logout", "createAccount"]);
 </script>
 
