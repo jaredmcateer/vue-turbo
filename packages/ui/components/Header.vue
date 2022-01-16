@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import MyButton from './Button.vue';
+import MyButton from "./Button.vue";
 
-defineProps<HeaderProps>();
+defineProps<{ user: Record<string, unknown> | null }>();
 defineEmits(["login", "logout", "createAccount"]);
 </script>
 
@@ -9,7 +9,12 @@ defineEmits(["login", "logout", "createAccount"]);
   <header>
     <div class="wrapper">
       <div>
-        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g fill="none" fill-rule="evenodd">
             <path
               d="M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z"
@@ -28,9 +33,25 @@ defineEmits(["login", "logout", "createAccount"]);
         <h1>Acme</h1>
       </div>
       <div>
-        <my-button size="small" @click="$emit('logout')" label="Log out" v-if="user" />
-        <my-button size="small" @click="$emit('login')" label="Log in" v-if="!user" />
-        <my-button primary size="small" @click="$emit('createAccount')" label="Sign up" v-if="!user" />
+        <my-button
+          size="small"
+          @click="$emit('logout')"
+          label="Log out"
+          v-if="user"
+        />
+        <my-button
+          size="small"
+          @click="$emit('login')"
+          label="Log in"
+          v-if="!user"
+        />
+        <my-button
+          primary
+          size="small"
+          @click="$emit('createAccount')"
+          label="Sign up"
+          v-if="!user"
+        />
       </div>
     </div>
   </header>
@@ -38,7 +59,7 @@ defineEmits(["login", "logout", "createAccount"]);
 
 <style scoped>
 .wrapper {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 15px 20px;
   display: flex;
@@ -63,5 +84,4 @@ h1 {
 button + button {
   margin-left: 10px;
 }
-
 </style>

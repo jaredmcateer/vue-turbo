@@ -7,7 +7,7 @@ export default {
   component: MyPage,
 };
 
-const Template: Story<PageProps> = (args) => ({
+const Template: Story<any> = (args) => ({
   // Components used in your story `template` are defined in the `components` object
   components: { MyPage },
   // The story's `args` need to be mapped into the template through the `setup()` method

@@ -1,19 +1,26 @@
 <template>
-  <button type="button" :class="classes" @click="onClick" :style="style">{{ label }}</button>
+  <button type="button" :class="classes" @click="onClick" :style="style">
+    {{ label }}
+  </button>
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed } from "vue";
 
-const props = defineProps<ButtonProps>();
+const props = defineProps<{
+  label: string;
+  primary?: boolean;
+  size: "small" | "medium" | "large";
+  backgroundColor?: string;
+}>();
 
-const emit = defineEmits(['click']);
+const emit = defineEmits(["click"]);
 
 const classes = computed(() => ({
-  'storybook-button': true,
-  'storybook-button--primary': props.primary,
-  'storybook-button--secondary': !props.primary,
-  [`storybook-button--${props.size || 'medium'}`]: true,
+  "storybook-button": true,
+  "storybook-button--primary": props.primary,
+  "storybook-button--secondary": !props.primary,
+  [`storybook-button--${props.size || "medium"}`]: true,
 }));
 
 const style = computed(() => ({
@@ -21,7 +28,7 @@ const style = computed(() => ({
 }));
 
 const onClick = () => {
-  emit('click');
+  emit("click");
 };
 </script>
 
