@@ -47,6 +47,7 @@ importers:
       '@storybook/addon-essentials': ^6.4.13
       '@storybook/addon-links': ^6.4.13
       '@storybook/vue3': ^6.4.13
+      '@types/node': ^17.0.8
       '@vitejs/plugin-vue': ^2.0.0
       babel-loader: ^8.2.3
       config: workspace:*
@@ -64,6 +65,7 @@ importers:
       '@storybook/addon-essentials': 6.4.13_842ae072e91490d0befa3f08701a2936
       '@storybook/addon-links': 6.4.13
       '@storybook/vue3': 6.4.13_98702690b93616be9453d899f3e7bbef
+      '@types/node': 17.0.8
       '@vitejs/plugin-vue': 2.0.1_vite@2.7.12+vue@3.2.27
       babel-loader: 8.2.3_@babel+core@7.16.7
       config: link:../config
