@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Vue Library Config",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "lib": ["esnext", "dom"],
+    "module": "esnext",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "target": "esnext",
+    "useDefineForClassFields": true,
+    "types": ["vite/client"]
+  },
+  "include": ["components/**/*.ts", "components/**/*.d.ts", "components/**/*.tsx", "components/**/*.vue"]
+}
