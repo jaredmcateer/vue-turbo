@@ -6,6 +6,6 @@
   "files": [
     "base.json",
     "vue-library.json",
-    "vite-app.json"
+    "vue-app.json"
   ]
 }
