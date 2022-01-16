@@ -10,7 +10,8 @@
     "resolveJsonModule": true,
     "sourceMap": true,
     "target": "esnext",
-    "useDefineForClassFields": true
+    "useDefineForClassFields": true,
+    "types": ["vite/client"]
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
