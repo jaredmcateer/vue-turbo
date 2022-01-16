@@ -24,7 +24,7 @@
         ],
         "outputs": [
           "dist/**",
-          ".next/**"
+          "storybook-static/**"
         ]
       },
       "lint": {

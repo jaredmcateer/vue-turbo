@@ -3,10 +3,8 @@
   "version": "0.0.0",
   "main": "index.ts",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build && build-storybook",
-    "preview": "vite preview",
-    "storybook": "start-storybook -p 6006",
+    "build": "vue-tsc --noEmit && vite build && build-storybook --quiet",
+    "dev": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
