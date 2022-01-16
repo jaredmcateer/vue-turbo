@@ -31,3 +31,12 @@ yarn-error.log*
 
 # turbo
 .turbo
+
+# Vite
+.DS_Store
+dist
+dist-ssr
+*.local
+
+#Storybook
+storybook-static
