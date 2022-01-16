@@ -1,5 +1,11 @@
 {
   "extends": "tsconfig/vue-library.json",
   "include": ["."],
-  "exclude": ["dist", "build", "node_modules"]
+  "exclude": [
+    "dist",
+    "build",
+    "node_modules",
+    // Needed to prevent volar from treating vue templates like jsx
+    "**/*.stories.ts"
+  ]
 }
