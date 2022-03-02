@@ -1,6 +1,6 @@
 # Turborepo starter with pnpm
 
-This is an official starter turborepo.
+This is an non-official starter turborepo.
 
 ## What's inside?
 
@@ -8,10 +8,9 @@ This turborepo uses [pnpm](https://pnpm.io) as a packages manager. It includes t
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `web`: a vite app
+- `ui`: a stub Vue component library
+- `config`: `eslint` configurations
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
@@ -35,6 +34,7 @@ To build all apps and packages, run the following command:
 
 ```
 cd my-turborepo
+pnpm install
 pnpm run build
 ```
 
